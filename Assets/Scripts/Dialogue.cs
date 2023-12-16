@@ -7,6 +7,7 @@ using TMPro;
 
 public class Dialogue : MonoBehaviour
 {
+    public static Dialogue Instance;
     public GameObject button;
     public TextMeshProUGUI textComponent;
     public string[] lines;
@@ -14,11 +15,25 @@ public class Dialogue : MonoBehaviour
 
     private int index;
 
+    private void Awake()
+    {
+        if(Instance != this && Instance != null)
+        {
+            Destroy(this);
+            return;
+        }
+        Instance = this;
+    }
+
+
     private void Start()
     {
         textComponent.text = string.Empty;
-        StartDialogue();
+         Dialogue.Instance.StartDialogue();
+       
     }
+
+
 
 
 
@@ -41,7 +56,7 @@ public class Dialogue : MonoBehaviour
     }
 
 
-    void StartDialogue()
+    public void StartDialogue()
     {
         index = 0;
         StartCoroutine(TypeLine());

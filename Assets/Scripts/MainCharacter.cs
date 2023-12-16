@@ -12,6 +12,7 @@ public class MainCharacter : MonoBehaviour
 
     [SerializeField]
 
+    public GameObject panel;
     public bool IsMainCharacter;
 
     Rigidbody2D rigitbody;
@@ -59,6 +60,7 @@ public class MainCharacter : MonoBehaviour
     {
         if (collision.transform.tag == "Karakter2")
         {
+            panel.SetActive(true);
             print("mahmut");
             if (collision.gameObject.GetComponent<MainCharacter>().IsMainCharacter == false)
             {
