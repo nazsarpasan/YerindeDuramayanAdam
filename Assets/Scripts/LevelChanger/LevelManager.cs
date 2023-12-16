@@ -23,7 +23,7 @@ public class LevelManager : MonoBehaviour
     private IEnumerator Delay()
     {
         
-        string yeniSahneAdi = "InsideCar";
+        string yeniSahneAdi = "InsideCarNaz";
         yield return new WaitForSeconds(0.6f);
         SceneManager.LoadScene(yeniSahneAdi);
 
