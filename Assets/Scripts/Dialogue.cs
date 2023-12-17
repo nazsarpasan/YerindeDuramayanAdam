@@ -14,7 +14,7 @@ public class Dialogue : MonoBehaviour
     public float textSpeed;
     public AudioSource catCrash;
     public GameObject sansi;
-    public AudioSource gibberishSpeak;
+   
 
 
 

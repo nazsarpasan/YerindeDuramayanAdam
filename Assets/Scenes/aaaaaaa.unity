@@ -864,14 +864,13 @@ MonoBehaviour:
   - "Adam:Belediye de bi i\u015Fini d\xFCzg\xFCn yapam\u0131yo gelirken yine girdim
     \xE7ukura..."
   - "Pompac\u0131:Evet abi."
-  - "Adam:Neyse karde\u015Fim fulle depoyu sen."
+  - "Adam:Neyse karde\u015Fim fulle depoyu sen. 48 Litre koyacaks\u0131n!!"
   - "Pompac\u0131:Tamam abi."
   - "Adam:Hadi seri ol piyasa ak\u0131cam daha."
   - ...
   textSpeed: 0.1
   catCrash: {fileID: 0}
   sansi: {fileID: 0}
-  gibberishSpeak: {fileID: 2136459171}
 --- !u!1 &459131336
 GameObject:
   m_ObjectHideFlags: 0
@@ -1850,7 +1849,6 @@ MonoBehaviour:
   textSpeed: 0.1
   catCrash: {fileID: 0}
   sansi: {fileID: 0}
-  gibberishSpeak: {fileID: 0}
 --- !u!1 &1143327121
 GameObject:
   m_ObjectHideFlags: 0

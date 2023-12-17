@@ -5,7 +5,7 @@ using UnityEngine;
 public class TriggerCharacter : MonoBehaviour
 {
     public GameObject panel;
-    public AudioSource gibberishSpeak;
+    
 
     // Start is called before the first frame update
     private void OnTriggerEnter2D(Collider2D collision)
@@ -13,7 +13,7 @@ public class TriggerCharacter : MonoBehaviour
         if(collision.CompareTag("Karakter2"))
         {
             panel.SetActive(true);
-            gibberishSpeak.Play();
+            
         }
        
         
