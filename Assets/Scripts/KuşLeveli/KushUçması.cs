@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
@@ -70,4 +71,23 @@ public class KushUçması : MonoBehaviour
         Camera.main.transform.position = birdPosition;
         
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.tag == "simit")
+        { 
+            RestartScene();
+        }
+    }
+
+
+    private void RestartScene()
+    {
+
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
+    }
+
+
 }
+
