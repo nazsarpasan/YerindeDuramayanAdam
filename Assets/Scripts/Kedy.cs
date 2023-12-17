@@ -76,7 +76,8 @@ public class Kedy : MonoBehaviour
     private void doSomethingWhenFalling()
     {     
         Debug.Log("I've fallen and I can't get up!");
-        
+        animator.SetBool("IsFalling", true);
+
     }
     void MoveKedy()
     {
