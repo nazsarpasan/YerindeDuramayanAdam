@@ -7,8 +7,8 @@ public class EndLevel4 : MonoBehaviour
 {
     public float hareketHizi = 2f;
     private bool hareketEtmekte = false;
-    public GameObject kuþ;
-    private Animator kuþAnimator;
+    public GameObject kus;
+    private Animator kusAnimator;
     
 
     void Update()
@@ -20,15 +20,15 @@ public class EndLevel4 : MonoBehaviour
             float hareketY = hareketHizi * Time.deltaTime;
 
             // Yeni pozisyonu hesapla ve güncelle
-            Vector2 yeniPozisyon = new Vector2(kuþ.transform.position.x + hareketX, kuþ.transform.position.y + hareketY);
-            kuþ.transform.position = yeniPozisyon;
+            Vector2 yeniPozisyon = new Vector2(kus.transform.position.x + hareketX, kus.transform.position.y + hareketY);
+            kus.transform.position = yeniPozisyon;
         }
 
     }
 
     void Start()
     {
-        kuþAnimator = kuþ.GetComponent<Animator>();
+        kusAnimator = kus.GetComponent<Animator>();
 
 
     }
@@ -48,7 +48,7 @@ public class EndLevel4 : MonoBehaviour
         hareketEtmekte = true;
       
         Debug.Log("calýsýyor");
-        kuþAnimator.enabled = true;
+        kusAnimator.enabled = true;
         StartCoroutine(WaitTillKarga());
 
 
