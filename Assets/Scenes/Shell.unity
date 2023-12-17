@@ -552,16 +552,12 @@ MonoBehaviour:
   button: {fileID: 0}
   textComponent: {fileID: 907592026}
   lines:
-  - "Adam:Belediye de bi i\u015Fini d\xFCzg\xFCn yapam\u0131yo gelirken yine girdim
-    \xE7ukura..."
-  - "Pompac\u0131:Evet abi."
-  - "Adam:Neyse karde\u015Fim fulle depoyu sen."
-  - "Pompac\u0131:Tamam abi."
-  - "Adam:Hadi seri ol piyasa ak\u0131cam daha."
-  - ...
+  - "Patron gelmeden \u015Fu camlar\u0131 bir sileyim."
+  - "Biraz ileride kova olacakt\u0131"
   textSpeed: 0.1
   catCrash: {fileID: 0}
   sansi: {fileID: 0}
+  gibberishSpeak: {fileID: 0}
 --- !u!1 &1166733426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1082,6 +1078,7 @@ MonoBehaviour:
   textSpeed: 0.1
   catCrash: {fileID: 0}
   sansi: {fileID: 0}
+  gibberishSpeak: {fileID: 0}
 --- !u!114 &1689883101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1238,7 +1235,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &2008267702
 Animator:
   serializedVersion: 5
@@ -1319,7 +1316,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2008267701}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2, y: 0, z: 0}
+  m_LocalPosition: {x: -17.9, y: 0.7, z: 0}
   m_LocalScale: {x: 18.52, y: 18.52, z: 18.52}
   m_ConstrainProportionsScale: 1
   m_Children: []

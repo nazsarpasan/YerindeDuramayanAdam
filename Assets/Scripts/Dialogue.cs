@@ -78,12 +78,13 @@ public class Dialogue : MonoBehaviour
 
     void NextLine()
     {
+        /*
         if (SceneManager.GetActiveScene().name == "aaaaaaa")
         {
             Debug.Log("asd");
             gibberishSpeak.Play();
         }
-
+        */
 
         if (index< lines.Length -1)
         {

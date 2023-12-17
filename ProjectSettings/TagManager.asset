@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Karakter1
   - Karakter2
+  - Panel
   layers:
   - Default
   - TransparentFX
