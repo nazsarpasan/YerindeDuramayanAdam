@@ -12,6 +12,8 @@ public class Dialogue : MonoBehaviour
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
+    public AudioSource catCrash;
+    public GameObject sansi;
 
     private int index;
 
@@ -79,6 +81,26 @@ public class Dialogue : MonoBehaviour
             index++;
             textComponent.text = string.Empty;
             StartCoroutine(TypeLine());
+
+            if(index==2)
+            {
+                if (SceneManager.GetActiveScene().name == "InsideCarNaz")
+                {
+                    CatCrashed();
+                }
+
+
+            }
+
+            if (index == 3)
+            {
+                if (SceneManager.GetActiveScene().name == "InsideCarNaz")
+                {
+                    DontCare();
+                }
+
+
+            }
         }
 
         else
@@ -86,6 +108,18 @@ public class Dialogue : MonoBehaviour
             gameObject.SetActive(false);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
+        
+    }
+
+    private void CatCrashed()
+    {
+        Debug.Log("KediEzildi");
+        catCrash.Play();
+        
+    }
+
+    private void DontCare()
+    {
         
     }
 
