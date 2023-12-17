@@ -25,6 +25,8 @@ public class MainCharacter : MonoBehaviour
 
     public GameObject karakter2;
 
+    public AudioSource gibberishSpeak;
+
     void Start()
     {
         rigitbody = GetComponent<Rigidbody2D>();
@@ -60,6 +62,7 @@ public class MainCharacter : MonoBehaviour
     {
         if (collision.transform.tag == "Karakter2")
         {
+            gibberishSpeak.Play();
             panel.SetActive(true);
             print("mahmut");
             if (collision.gameObject.GetComponent<MainCharacter>().IsMainCharacter == false)

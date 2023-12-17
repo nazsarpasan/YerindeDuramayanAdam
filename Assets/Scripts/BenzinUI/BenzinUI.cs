@@ -13,29 +13,45 @@ public class BenzinUI : MonoBehaviour
     public TextMeshProUGUI litreSayaç;
     private int litre = 30;
 
+
     //fill
     public GameObject fillButton;
     public GameObject allPanel;
     public AudioSource fillSound;
+    public AudioSource gibbereishStop;
 
+    private void Start()
+    {
+        litre = Random.Range(30,60);
+    }
     public void Decrease()
     {
-        litre -= 2;
+        litre -= 1;
         litreSayaç.text = litre.ToString();
 
         if (litre == 48)
         {
             fillButton.SetActive(true);
         }
+         else
+        {
+            fillButton.SetActive(false);
+
+        }
     }
     public void Increase()
     {
-        litre += 2;
+        litre += 1;
         litreSayaç.text = litre.ToString();
 
         if (litre==48)
         {
             fillButton.SetActive(true);
+        }
+        else
+        {
+            fillButton.SetActive(false);
+
         }
     }
 
@@ -43,7 +59,9 @@ public class BenzinUI : MonoBehaviour
     {
         allPanel.SetActive(false);
         fillSound.Play();
+        gibbereishStop.Stop();
         StartCoroutine(ScenePass());
+
     }
 
    IEnumerator ScenePass()

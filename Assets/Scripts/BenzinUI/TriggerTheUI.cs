@@ -5,8 +5,7 @@ using UnityEngine;
 public class TriggerTheUI : MonoBehaviour
 {
     public GameObject UIpanel;
-    
-    
+   
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -14,6 +13,9 @@ public class TriggerTheUI : MonoBehaviour
         {
             UIpanel.SetActive(true);
            
+                
+            
+
         }
     }
 }

@@ -16,6 +16,8 @@ public class Dialogue : MonoBehaviour
     public GameObject sansi;
     public AudioSource gibberishSpeak;
 
+
+
     private int index;
 
     private void Awake()
@@ -61,7 +63,7 @@ public class Dialogue : MonoBehaviour
 
     public void StartDialogue()
     {
-       
+        
 
         index = 0;
         StartCoroutine(TypeLine());
@@ -78,21 +80,19 @@ public class Dialogue : MonoBehaviour
 
     void NextLine()
     {
-        /*
-        if (SceneManager.GetActiveScene().name == "aaaaaaa")
-        {
-            Debug.Log("asd");
-            gibberishSpeak.Play();
-        }
-        */
-
+        
+        
+        
         if (index< lines.Length -1)
         {
             index++;
             textComponent.text = string.Empty;
             StartCoroutine(TypeLine());
 
-            if(index==2)
+
+           
+
+            if (index==2)
             {
                 if (SceneManager.GetActiveScene().name == "InsideCarNaz")
                 {
