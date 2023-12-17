@@ -33,21 +33,7 @@ public class simit : MonoBehaviour
         }
 
     }
-     void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.transform.tag == "Karakter1")
-        {
-            RestartScene();
-        }
-     }
-
-
-    private void RestartScene()
-    {
-        
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex);
-    }
+  
 
 }
 
